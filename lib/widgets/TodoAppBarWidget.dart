@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 ///
 /// Create App bar custom widget.
@@ -29,7 +28,9 @@ class _TodoAppBarWidgetState extends State<TodoAppBarWidget> {
             icon: Icon(Icons.all_inclusive),
             onPressed: this.widget.showAllOnPressed,
           ),
-          actions: [Icon(Icons.book)],
+          actions: [
+            Icon(Icons.book),
+          ],
         ));
   }
 }

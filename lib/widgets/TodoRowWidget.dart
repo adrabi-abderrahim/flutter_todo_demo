@@ -21,8 +21,10 @@ class _TodoRowWidgetState extends State<TodoRowWidget> {
             color: Colors.lightGreenAccent,
           ),
           ListTile(
-            title: Text('Todo! ${widget.index} ',
-            style: Theme.of(context).textTheme.headline5,),
+            title: Text(
+            'Todo! ${widget.index}',
+            style: Theme.of(context).textTheme.headline5,
+          ),
             subtitle: Text(DateTime.now().toString()),
             trailing: IconButton(
               icon: Icon(Icons.check),
