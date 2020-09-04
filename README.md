@@ -2,4 +2,4 @@
 
 Flutter Todo App Demo
 
-This application is a simple demonstration to use Flutter.
+This application is a simple demonstration.
