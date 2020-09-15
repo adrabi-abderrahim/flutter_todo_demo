@@ -17,10 +17,14 @@ class _HomeViewState extends State<HomeView> {
       ),
       body: SafeArea(
           child: TodoListViewWidget(
+        itemCount: 10,
         hasEmptyBottom: true,
-        itemCount: 8,
       )),
-      floatingActionButton: TodoFloatingButtonWidget(),
+      floatingActionButton: TodoFloatingButtonWidget(
+        floatingButtonPressed: () {
+          Navigator.of(context).pushNamed('/add-todo');
+        },
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }

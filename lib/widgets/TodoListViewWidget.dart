@@ -46,6 +46,12 @@ class _TodoListViewWidgetState extends State<TodoListViewWidget> {
           } else {
             return TodoRowWidget(
               index: index + 1 + topOffset,
+              todoOnValidatePressed: (){
+                print('Validate Pressed');
+              },
+              todoOnEditTapped: (){
+                print('Edit tapped');
+              },
             );
           }
         });
